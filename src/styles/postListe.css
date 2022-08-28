@@ -1,0 +1,31 @@
+.post-cont {
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    width: 958;
+    height: 100%;
+    margin-left: 10px;
+    top: 0px;
+    margin-bottom: 50px;
+}
+.post-cont h2{
+    text-align: left;
+    margin-left: 20px ;
+}
+.tit-content{
+border: solid 1px  rgb(156, 149, 149);
+  margin-top: 8px;
+    padding:  10px;
+    border-radius: 0px;
+    background-color: rgb(34, 36, 37);
+    width: 99%;
+
+}
+
+
+
+.tit-content h3{
+    font-size: 30px;
+   
+}
+

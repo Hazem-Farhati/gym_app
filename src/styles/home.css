@@ -1,0 +1,513 @@
+.home-body{
+    color: aliceblue;
+    margin-top: -300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #060c21; */
+    font-family: 'Poppins',sans-serif;
+    
+}
+.container{
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-template-rows:auto;
+    grid-gap: 0 50px;
+    left:200px
+}
+
+.container .box
+{
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  #000;
+    border-radius: 10px;
+}
+
+.content
+{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.box .content h2{
+    position: absolute;
+    top: -60px;
+    margin: 0px;
+    padding: 0;
+    font-size: 70px;
+    color: rgba(255,255,255,.05);
+    transition: 0.5s;
+    align-items: center;
+    width: 100%;
+}
+.box:hover .content h2 {
+    top: -140px;
+}
+.box .content h3{
+    margin:  0 0 10px;
+    padding:  0;
+    font-size: 24px;
+    font-weight: 500;
+    color:  #fff;
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+.card{
+position: relative;
+width: 900px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.5);
+overflow:hidden ;
+border-radius: 20px;
+margin-left: 40px;
+margin-top: -100px;
+}
+.card::before{
+    content: ' ';
+    position: absolute;
+    width: 900px;
+    height: 400px;    
+    background:linear-gradient(#00ccff,#d400d4) ;
+    animation: animate 30s linear infinite;
+}
+.card::after
+{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color:  #0e1538;
+    border-radius: 16px;
+
+}
+@keyframes animate 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(350deg);
+    }
+}
+.text {
+text-align: center; 
+   width: 300px;
+   height: 300px;
+    color: #fff;
+    font-size: 10px;
+    /* background-color:#d400d4; */
+    z-index: 10;
+    margin-top: -50px;
+}
+.card .text span{
+    font-size: 22px;
+    color: rgb(88, 75, 75);
+}
+.image{
+    width: 98%;
+    height: 239px;
+    border-radius: 10px;
+}
+
+
+/* hover */
+.hov-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin-top: 270px;
+    margin-right:300px ;
+}
+.hov-img{
+     width: 500px;
+     height: 700px;
+     margin-top: 40px;
+     position: relative;
+}
+.hov-img .img{
+    width: 500px;
+    height: 300px;
+}
+.top-img{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 20px;
+    width: 500px;
+    height: 400px;
+
+}
+.top-img:hover{
+    opacity: 1;
+}
+
+.image1{
+    position: absolute;
+    width: 890px;
+    height: 390px;
+    left: -43px;
+    border-radius: 15px;
+
+  
+}
+
+.image3{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 890px;
+    height: 390px;
+    left: -43px;
+    border-radius: 15px;
+}
+.image3:hover{
+    opacity: 1;
+    transition:1s;
+}
+
+/*text animation */
+ /*welcom */
+ .welcom{
+    font-family: "Roboto", sans-serif;
+    background: #22222a;
+  }
+  .xbox {
+    font-size: 150px;
+    position: absolute;
+    top: 290px;
+    left: 630px;
+    transform: translate(-50%, -51%);
+    text-shadow: 0px 0px 4px #009432;
+    color: #22222a;
+  }
+  .xbox .inside {
+    font-size: 151px;
+    background-image: linear-gradient(180deg, white 10%, #171717 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: none;
+    top: 90px;
+    left: 387px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+ 
+ 
+  @keyframes loading {
+    0% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 50%,
+        100% 100%
+      );
+    }
+    12.5% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 100%,
+        100% 100%
+      );
+    }
+    25% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        50% 100%,
+        50% 100%
+      );
+    }
+    37.5% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        0% 100%,
+        0% 100%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 50%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        0% 50%,
+        0% 50%
+      );
+    }
+    62.5% {
+      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 50%, 50% 50%, 0% 0%, 0% 0%);
+    }
+    75% {
+      clip-path: polygon(
+        50% 0%,
+        50% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        50% 0%,
+        50% 0%
+      );
+    }
+    87.5% {
+      clip-path: polygon(
+        100% 0%,
+        100% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 0%,
+        100% 0%
+      );
+    }
+    100% {
+      clip-path: polygon(
+        100% 50%,
+        100% 50%,
+        100% 50%,
+        100% 50%,
+        50% 50%,
+        100% 50%,
+        100% 50%
+      );
+    }
+  }
+  @keyframes loading2 {
+    0% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 50%,
+        100% 100%
+      );
+    }
+    12.5% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 100%,
+        100% 100%
+      );
+    }
+    25% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        50% 100%,
+        50% 100%
+      );
+    }
+    37.5% {
+      clip-path: polygon(
+        0% 100%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        0% 100%,
+        0% 100%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 50%,
+        0% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        0% 50%,
+        0% 50%
+      );
+    }
+    62.5% {
+      clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 50%, 50% 50%, 0% 0%, 0% 0%);
+    }
+    75% {
+      clip-path: polygon(
+        50% 0%,
+        50% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        50% 0%,
+        50% 0%
+      );
+    }
+    87.5% {
+      clip-path: polygon(
+        100% 0%,
+        100% 0%,
+        100% 0%,
+        100% 50%,
+        50% 50%,
+        100% 0%,
+        100% 0%
+      );
+    }
+    100% {
+      clip-path: polygon(
+        100% 50%,
+        100% 50%,
+        100% 50%,
+        100% 50%,
+        50% 50%,
+        100% 50%,
+        100% 50%
+      );
+    }
+  }
+
+
+  
+/* carousel */ 
+
+.carousel-body{
+  width:200%;
+  height: 460px;
+  margin-left: 20px;
+  /* background: #000; */
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+  overflow: hidden
+}
+
+.carous-container {
+  position: relative;
+  width: 661px;
+  margin-left: 340px ;
+  perspective: 1000px;
+  
+}
+
+.carousel {
+  position: absolute;
+  width: 477px;
+  height: 200px;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+  margin-left: 50px;
+  margin-top:10px;
+
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://s2.best-wallpaper.net/wallpaper/3840x2160/2004/Dumbbells-rusty-fitness-gym_3840x2160.jpg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://images.unsplash.com/photo-1591311630200-ffa9120a540f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=810&q=80");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://images.unsplash.com/photo-1590239926044-4131f5d0654d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=791&q=80");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
+.auth{
+  color: rgb(155, 157, 213);
+}
+
+.card-carou{
+  margin-bottom: 00px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 900px;
+}
+  
+
+
+
+

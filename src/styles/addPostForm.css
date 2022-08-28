@@ -1,0 +1,153 @@
+.add-cont{
+    position: relative;
+    margin-top:-500px ;
+    margin-left: 360px;
+    color: aliceblue;
+    
+}
+.view{
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+width: 70%;
+border-radius: 10px;
+background-color: rgb(24, 21, 21);
+}
+.view h1{
+    position: absolute;
+    color: #000000;
+    background-color: rgb(234, 224, 224);
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    margin-left: 660px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}   
+.view h1:hover{
+background-color: #c11212;
+}
+
+.add-cont textarea{
+    width: 500px;
+    height: 200px;
+}
+.add-title{
+padding: 10px;
+    display: flex;
+    width: 600px;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+.add-title input{
+    width: 200px;
+    height: 10px;
+}
+
+.add-content{
+    display: flex;
+    width: 600px;
+padding: 10px;
+
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.btn-sv{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+     background: #000;;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.btn-sv:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn-sv:active {
+    color: #000
+}
+
+.btn-sv:active:after {
+    background: transparent;
+}
+
+.btn-sv:hover:before {
+    opacity: 1;
+}
+
+.btn-sv:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.plus{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left:-1050px ;
+    justify-content: center;
+    gap: 20px;    
+}
+.plus h2{
+    margin-left: -750px;
+}
+    .plus span{
+        font-size: 30px;
+        
+    }
+
+    .user-c{
+        padding: 10px;
+        display: flex;
+        width: 600px;
+        gap: 70px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+     #postAuthor{
+        width: 200px;
+        height: 40px;
+     }

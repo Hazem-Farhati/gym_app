@@ -1,0 +1,143 @@
+
+.cover {
+    background-color: rgba(20 , 20 , 20,0,8);
+    width: 30em;
+    height: 23em;
+    position: relative;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+    left: 420px;
+    top: -500px;
+}
+.cover h1{
+    color: rgb(143, 147, 149);
+}
+
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.alt-login div {
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+input {
+    border: none;
+    background-color: #dae3e7;
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+
+input:focus {
+    outline-color: rgb(85, 89, 91);
+}
+
+.login-btn {
+    width: 90px;
+    height: 3em;
+    background-color: rgb(143, 147, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+    /* margin-left: 150px; */
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: -2em;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+/* register */ 
+
+.register-btn {
+    width: 90px;
+    height: 3em;
+    background-color: rgb(143, 147, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+    /* margin-left: 150px; */
+}
+
+.register-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: -2em;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.register-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.login-register{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
